@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decode Labs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--  HEADER  -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a href="#" class="logo">Decode Labs<span class="logo-dot">.</span></a>
+
+        <nav class="nav" id="nav">
+          <a href="#home" class="nav__link">Home</a>
+          <a href="#about" class="nav__link">About</a>
+          <a href="#services" class="nav__link">Services</a>
+          <a href="#portfolio" class="nav__link">Portfolio</a>
+          <a href="#blog" class="nav__link">Blog</a>
+          <a href="#contact" class="nav__link">Contact</a>
+        </nav>
+
+        <a href="#contact" class="btn btn--primary header__cta">Get A Quote</a>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Mobile / tablet dropdown menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" class="mobile-menu__link">Home</a>
+        <a href="#about" class="mobile-menu__link">About</a>
+        <a href="#services" class="mobile-menu__link">Services</a>
+        <a href="#portfolio" class="mobile-menu__link">Portfolio</a>
+        <a href="#blog" class="mobile-menu__link">Blog</a>
+        <a href="#contact" class="mobile-menu__link">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <!--  HERO  -->
+      <section class="hero" id="home">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <span class="eyebrow">Welcome to Decode Labs</span>
+            <h1 class="hero__title">
+              We Build Digital Products That
+              <span class="text-accent">Drive Success</span>
+            </h1>
+            <p class="hero__text">
+              Decode Labs is a creative digital agency helping brands grow with
+              strategy, design and technology.
+            </p>
+            <div class="hero__actions">
+              <a href="#contact" class="btn btn--primary">Get Started</a>
+              <a href="#services" class="btn btn--outline"
+                ><span class="play-icon">▶</span> Our Services</a
+              >
+            </div>
+          </div>
+          <div class="hero__media">
+            <img
+              src="./images/home1.jpg"
+              alt="Team working together in a modern office"
+              class="hero__img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--  WHAT WE DO  -->
+      <section class="section services" id="services">
+        <div class="container">
+          <div class="section__heading">
+            <span class="eyebrow eyebrow--center">Our Services</span>
+            <h2 class="section__title">What We Do</h2>
+            <p class="section__text">
+              We provide wide range of digital services to help businesses grow
+              and succeed online.
+            </p>
+          </div>
+
+          <div class="services__grid">
+            <div class="service-card">
+              <div class="service-card__icon">💻</div>
+              <h3 class="service-card__title">Web Development</h3>
+              <p class="service-card__text">
+                We build fast, responsive and modern websites that convert
+                visitors into customers.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__icon">📱</div>
+              <h3 class="service-card__title">Mobile Development</h3>
+              <p class="service-card__text">
+                We create high performance mobile apps for iOS and Android
+                platforms.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__icon">🎨</div>
+              <h3 class="service-card__title">UI/UX Design</h3>
+              <p class="service-card__text">
+                We design beautiful and intuitive interfaces that provide great
+                user experience.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-card__icon">📊</div>
+              <h3 class="service-card__title">Digital Marketing</h3>
+              <p class="service-card__text">
+                We help you reach your audience and grow your brand with digital
+                marketing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  WHY CHOOSE US  -->
+      <section class="section why-choose" id="about">
+        <div class="container why-choose__inner">
+          <div class="why-choose__media">
+            <img
+              src="./images/team.jpg"
+              alt="Team collaborating around a laptop"
+              class="why-choose__img"
+            />
+            <div class="badge">
+              <span class="badge__number">10+</span>
+              <span class="badge__label">Years of Experience</span>
+            </div>
+          </div>
+
+          <div class="why-choose__content">
+            <span class="eyebrow">Why Choose Us</span>
+            <h2 class="why-choose__title">
+              We Create Solutions That Are Bold &amp; Effective
+            </h2>
+            <p class="why-choose__text">
+              We combine creativity, technology and data to deliver solutions
+              that drive real results.
+            </p>
+
+            <ul class="check-list">
+              <li>Experienced and skilled team</li>
+              <li>High quality and reliable services</li>
+              <li>Focused on customer satisfaction</li>
+              <li>We deliver on time, every time</li>
+            </ul>
+
+            <a href="#contact" class="btn btn--primary">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+      <!--  PORTFOLIO  -->
+      <section class="section portfolio" id="portfolio">
+        <div class="container">
+          <div class="section__heading">
+            <span class="eyebrow eyebrow--center">Our Portfolio</span>
+            <h2 class="section__title">Our Recent Work</h2>
+          </div>
+
+          <div class="filters" id="filters">
+            <button class="filter-btn is-active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Design</button>
+            <button class="filter-btn" data-filter="mobile">Mobile App</button>
+            <button class="filter-btn" data-filter="branding">Branding</button>
+            <button class="filter-btn" data-filter="marketing">
+              Marketing
+            </button>
+          </div>
+
+          <div class="portfolio__grid" id="portfolioGrid">
+            <div class="portfolio-card" data-category="web">
+              <img src="./images/phone1.jpg" alt="" />
+              <div class="portfolio-card__info">
+                <h3>Finance Dashboard</h3>
+                <span>Web Design</span>
+              </div>
+            </div>
+            <div class="portfolio-card" data-category="mobile">
+              <img src="./images/phone2.jpg" alt="" />
+              <div class="portfolio-card__info">
+                <h3>Task Management App</h3>
+                <span>Mobile App</span>
+              </div>
+            </div>
+            <div class="portfolio-card" data-category="web">
+              <img src="./images/phone3.jpg" alt="" />
+              <div class="portfolio-card__info">
+                <h3>Travel Website</h3>
+                <span>Web Design</span>
+              </div>
+            </div>
+            <div class="portfolio-card" data-category="branding">
+              <img src="./images/phone4.jpg" alt="" />
+              <div class="portfolio-card__info">
+                <h3>Brand Identity</h3>
+                <span>Branding</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stats -->
+          <div class="stats">
+            <div class="stat">
+              <span class="stat__icon">👥</span>
+              <span class="stat__number">120+</span>
+              <span class="stat__label">Happy Clients</span>
+            </div>
+            <div class="stat">
+              <span class="stat__icon">✅</span>
+              <span class="stat__number">250+</span>
+              <span class="stat__label">Projects Completed</span>
+            </div>
+            <div class="stat">
+              <span class="stat__icon">⏱️</span>
+              <span class="stat__number">10+</span>
+              <span class="stat__label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat__icon">🧑‍🤝‍🧑</span>
+              <span class="stat__number">50+</span>
+              <span class="stat__label">Team Members</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  FAQ + CONTACT  -->
+      <section class="section faq-contact" id="contact">
+        <div class="container faq-contact__inner">
+          <div class="faq">
+            <span class="eyebrow">FAQs</span>
+            <h2 class="section__title section__title--left">
+              Frequently Asked Questions
+            </h2>
+
+            <div class="accordion" id="accordion">
+              <div class="accordion-item is-open">
+                <button class="accordion-header">
+                  <span>What services do you offer?</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p>
+                    We offer web development, mobile app development, UI/UX
+                    design and digital marketing services tailored to your
+                    business goals.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-header">
+                  <span>How long does a project take?</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p>
+                    Timelines vary depending on scope, but most projects are
+                    completed within 4 to 12 weeks from kickoff to launch.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-header">
+                  <span>Do you provide support after project delivery?</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p>
+                    Yes, we offer ongoing maintenance and support packages to
+                    keep your product running smoothly after launch.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-header">
+                  <span>How much does a website cost?</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p>
+                    Pricing depends on the complexity and features required.
+                    Contact us for a custom quote based on your needs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap">
+            <span class="eyebrow">Contact Us</span>
+            <h2 class="section__title section__title--left">
+              Let's Work Together
+            </h2>
+            <p class="section__text section__text--left">
+              Have a project in mind? Let's talk and create something amazing
+              together.
+            </p>
+
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn--primary btn--block">
+                Send Message
+              </button>
+            </form>
+            <p class="form-success" id="formSuccess">
+              Thanks! Your message has been sent.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__col footer__col--brand">
+          <a href="#" class="logo logo--light"
+            >Decode Labs<span class="logo-dot">.</span></a
+          >
+          <p>
+            Decode Labs is a creative digital agency helping brands grow with
+            strategy, design and technology.
+          </p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Twitter">TW</a>
+            <a href="#" aria-label="LinkedIn">IN</a>
+            <a href="#" aria-label="Instagram">IG</a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Services</h4>
+          <a href="#services">Web Development</a>
+          <a href="#services">Mobile Development</a>
+          <a href="#services">UI/UX Design</a>
+          <a href="#services">Digital Marketing</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Support</h4>
+          <a href="#">Help Center</a>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">FAQ</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <a href="mailto:info@Decode Labs.com">info@Decode Labs.com</a>
+          <a href="tel:+12345678900">+1 234 567 890</a>
+          <span>123 Street, New York, USA</span>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Decode Labs. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
